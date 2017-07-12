@@ -1,4 +1,4 @@
-﻿namespace Facebook.entity
+﻿namespace Facebook.Entity
 {
     public class User
     {

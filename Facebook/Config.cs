@@ -1,4 +1,4 @@
-﻿using Facebook.entity;
+﻿using Facebook.Entity;
 
 namespace Facebook
 {
