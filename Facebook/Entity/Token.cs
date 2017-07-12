@@ -5,12 +5,12 @@
         private readonly string _token;
 
         public Token(string token) {
-            this._token = token;
+            _token = token;
         }
 
         public string GetValue()
         {
-            return this._token;
+            return _token;
         }
     }
 }
