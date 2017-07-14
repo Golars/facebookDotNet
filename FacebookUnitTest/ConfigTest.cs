@@ -1,4 +1,5 @@
 using System;
+using Facebook;
 using Xunit;
 
 namespace FacebookUnitTest
@@ -8,7 +9,8 @@ namespace FacebookUnitTest
         [Fact]
         public void InitTest()
         {
-            Assert.False(false);
+            var Config = new Config("v5", "http://test/");
+            Assert.Equal("http://test/v5", Config.GetUrl());
         }
     }
 }
