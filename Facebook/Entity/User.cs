@@ -2,7 +2,7 @@
 {
     public class User
     {
-        public User(string id, string name, string email, string cover)
+        public User(string id, string name, string email = "", string cover = "")
         {
             Id = id;
             Name = name;
