@@ -1,13 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="xunit" Version="2.2.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Compile Remove="JsonTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Facebook\Facebook.csproj">
+      <Project>{58D9A742-DE96-40AA-BE5E-71EEAAE424BB}</Project>
+      <Name>Facebook</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
